@@ -1,42 +1,8 @@
-# sv
+# This project is an example Nodemailer + SvelteKit to send emails to users using Gmail.
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+In nodemailer, they say that you should use other providers if possible to avoid usage limits and whatnot.
+Also for this example I will be using App Password as the authentication method for simplicity.
 
-## Creating a project
+If you're curious, search "App Password google", enable 2FA (I think it's required) and create a password to use and store it somewhere.
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project
-npx sv create my-app
-```
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv@0.15.1 create --template minimal --types ts --install npm svelte-kit-nodemailer-example
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Feel free to copy the code, but if you want it to run you should create a .env file on the project root and add in your credentials (APP_PASSWORD, SENDER_EMAIL).
